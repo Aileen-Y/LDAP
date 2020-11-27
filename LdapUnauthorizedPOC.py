@@ -12,7 +12,7 @@ CLI_LEVEL = 'INFO'
 logger.remove()
 logger.add(
     "%s" % LOG, level=('%s' % LogFile_LEVEL))
-logger.add(sys.stderr, level=('%s' % CLI_LEVEL), enqueue=True)  # 命令终端日志级别默认为INFOR
+logger.add(sys.stderr, level=('%s' % CLI_LEVEL), enqueue=True)  # 命令终端日志级别默认为INFO
 
 def read_file(file_path):
     if not os.path.exists(file_path):
