@@ -32,7 +32,7 @@ def LdapCheck(ip):
                 logger.debug("Log In Failed;{}".format(ip))
             elif "text: Not bind/authenticate yet" in result:
                 logger.debug("Log In Failed;{}".format(ip))
-            elif "result" in result:
+            elif "result: 0" in result:
                 logger.info("Log In Success;{}".format(ip))
             else:
                 logger.info("Something Wrong!{}".format(ip))
